@@ -11,7 +11,7 @@ class ShapeCalculator:
             try:
                 radius = float(radius_str)
 
-                if radius <= 0:
+                if radius < 0:
                     raise ValueError("Радиус должен быть положительным числом")
 
             except ValueError:
